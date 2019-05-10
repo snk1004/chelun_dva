@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+  overflow-y: auto;
+}
+
+.prog {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.prog span {
+  flex: 1;
+  color: #3aaffd;
+  text-align: center;
+  height: 100%;
+  line-height: 50px;
+  font-size: 14px;
+  background: #3aaffd;
+  background: linear-gradient(-45deg, transparent 15px, #fff 0);
+}
+
+.prog span:nth-child(1) {
+  color: #fff;
+  background: linear-gradient(-45deg, transparent 15px, #3aaffd 0);
+}
+
+.imgs {
+  width: 100%;
+  height: 100px;
+  background-image: url(../static/images/pic.jpg);
+  background-size: 100% 100px;
+  flex-shrink: 0;
+}
+
+.identity {
+  width: 100%;
+  height: 110px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+.identity dl {
+  width: 18%;
+  height: 105px;
+  box-sizing: border-box;
+  padding: 10px 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.identity dl dd {
+  width: 55px;
+  height: 42px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.identity dl dd img {
+  width: 50%;
+}
+
+.identity dl dt {
+  width: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-family: '黑体';
+  letter-spacing: .1px;
+}
+
+.serve {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.serve li {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.serve li:nth-child(1){
+  position: relative;
+}
+.serve li:nth-child(1) span:nth-child(2){
+  color: #333!important;
+  margin-right: 18px;
+}
+.serve li:nth-child(1) i{
+  position: absolute;
+  right: 0;
+  top: 17px;
+  color: #999;
+}
+.serve li span:nth-child(2) {
+  color: #999 !important;
+}
+
+.serve li:last-child span:nth-child(2) {
+  color: tomato !important;
+}
+
+.Vip {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.Vip li {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+.Vip li:nth-child(2){
+  height: 45px;
+  border: none;
+  font-size: 14px;
+}
+.Vip li:nth-child(2) i{
+  color: #999;
+}
+.Vip li dl:nth-child(1) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 65%;
+}
+
+.Vip li dl:nth-child(1) dd {
+  color: #666;
+  font-size: 12px;
+}
+
+.Vip li dl:nth-child(2) {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  border: none;
+  box-sizing: border-box;
+}
+
+.Vip li dl:nth-child(2) dd:nth-child(1) {
+  color: #888;
+  font-size: 14px;
+}
+
+.Vip li dl:nth-child(2) dd:nth-child(2) {
+  color: tomato;
+  font-size: 16px;
+}
+label{
+  width: 20px;
+  height: 20px;
+}
+label span,label span input{
+  width: 100%;
+  height: 100%;
+}
+.Vip li button {
+  width: 40px;
+  height: 20px;
+}
+
+.question {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 100px;
+  padding-top: 10px;
+  text-align: center;
+  color: #3aaffd;
+}
+
+/* 脚部 */
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+
+footer span:nth-child(1) {
+  padding-left: 10px;
+}
+
+footer span:nth-child(2) {
+  width: 100px;
+  height: 100%;
+  line-height: 50px;
+  background: #999999;
+  color: #fff;
+  text-align: center;
+}
