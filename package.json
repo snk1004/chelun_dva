@@ -7,7 +7,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@ant-design/react-native": "^3.1.8",
     "antd": "^3.17.0",
+    "antd-mobile": "^2.2.13",
+    "antd-mobile-demo-data": "^0.2.0",
     "axios": "^0.18.0",
     "babel-plugin-import": "^1.11.0",
     "dva": "^2.4.1",

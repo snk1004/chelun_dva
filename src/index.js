@@ -1,6 +1,9 @@
 import dva from 'dva';
 import './index.css';
 
+import VConsole from 'vconsole/dist/vconsole.min.js' //import vconsole
+new VConsole() // 初始化
+
 // 1. Initialize
 const app = dva();
 

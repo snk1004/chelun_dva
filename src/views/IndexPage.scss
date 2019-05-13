@@ -12,15 +12,23 @@
   background: #eee;
   overflow-y: auto;
 }
-
+:global {
+  .am-navbar{
+    flex-shrink: 0!important;
+  }
+  .am-navbar-title{
+    font-size: 14px!important;
+  }
+}
 .prog {
   width: 100%;
-  height: 50px;
+  height: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   flex-shrink: 0;
+  background: #fff;
 }
 
 .prog span {
@@ -28,23 +36,30 @@
   color: #3aaffd;
   text-align: center;
   height: 100%;
-  line-height: 50px;
+  line-height: 45px;
   font-size: 14px;
-  background: #3aaffd;
-  background: linear-gradient(-45deg, transparent 15px, #fff 0);
+  background: linear-gradient(-113deg, transparent 10px, #fff 0) top right,
+    linear-gradient(-66deg, transparent 10px, #fff 0) bottom right;
+  background-size: 100% 51%;
+  background-repeat: no-repeat;
 }
 
 .prog span:nth-child(1) {
   color: #fff;
-  background: linear-gradient(-45deg, transparent 15px, #3aaffd 0);
+  background: linear-gradient(-113deg, transparent 10px, #3aaffd 0) top right,
+    linear-gradient(-66deg, transparent 10px, #3aaffd 0) bottom right;
+  background-size: 100% 51%;
+  background-repeat: no-repeat;
 }
 
 .imgs {
   width: 100%;
-  height: 100px;
-  background-image: url(../static/images/pic.jpg);
   background-size: 100% 100px;
   flex-shrink: 0;
+  img{
+    width: 100%!important;
+    height: auto;
+  }
 }
 
 .identity {
@@ -53,7 +68,7 @@
   background: #fff;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   flex-shrink: 0;
 }
 
@@ -98,7 +113,7 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 10px;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -112,19 +127,33 @@
   align-items: center;
   border-bottom: 1px solid #eee;
 }
-.serve li:nth-child(1){
+
+:global {
+  .am-list-line {
+    padding: 0 !important;
+    font-size: 14px;
+  }
+
+  .am-list-extra {
+    flex-basis: initial !important;
+  }
+}
+
+.serve li:nth-child(1) {
   position: relative;
 }
-.serve li:nth-child(1) span:nth-child(2){
-  color: #333!important;
-  margin-right: 18px;
+
+.serve li:nth-child(1) span:nth-child(2) {
+  color: #333 !important;
 }
-.serve li:nth-child(1) i{
+
+.serve li:nth-child(1) i {
   position: absolute;
   right: 0;
   top: 17px;
   color: #999;
 }
+
 .serve li span:nth-child(2) {
   color: #999 !important;
 }
@@ -138,7 +167,7 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  padding: 10px 10px 0 10px;
+  padding: 0 10px;
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -151,14 +180,17 @@
   align-items: center;
   border-bottom: 1px solid #eee;
 }
-.Vip li:nth-child(2){
+
+.Vip li:nth-child(2) {
   height: 45px;
   border: none;
   font-size: 14px;
 }
-.Vip li:nth-child(2) i{
+
+.Vip li:nth-child(2) i {
   color: #999;
 }
+
 .Vip li dl:nth-child(1) {
   height: 100%;
   display: flex;
@@ -191,14 +223,18 @@
   color: tomato;
   font-size: 16px;
 }
-label{
+
+label {
   width: 20px;
   height: 20px;
 }
-label span,label span input{
+
+label span,
+label span input {
   width: 100%;
   height: 100%;
 }
+
 .Vip li button {
   width: 40px;
   height: 20px;
@@ -207,14 +243,14 @@ label span,label span input{
 .question {
   width: 100%;
   height: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   padding-top: 10px;
   text-align: center;
   color: #3aaffd;
 }
 
 /* 脚部 */
-footer {
+.foot {
   width: 100%;
   height: 50px;
   display: flex;
@@ -225,17 +261,36 @@ footer {
   bottom: 0;
   background: #fff;
   border-top: 1px solid #ddd;
+  span:nth-child(1) {
+    padding-left: 10px;
+    em{
+      font-style: normal;
+      color: tomato;
+    }
+  }
+  .to_pay {
+    width: 100px;
+    height: 100%;
+    line-height: 50px;
+    background: #999999;
+    color: #fff;
+    text-align: center;
+  }
+  .cusService{
+    position: fixed;
+    bottom: 55px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: #3aaffd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 70%;
+    }
+  }
 }
 
-footer span:nth-child(1) {
-  padding-left: 10px;
-}
-
-footer span:nth-child(2) {
-  width: 100px;
-  height: 100%;
-  line-height: 50px;
-  background: #999999;
-  color: #fff;
-  text-align: center;
-}
